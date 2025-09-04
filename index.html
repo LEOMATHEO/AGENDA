@@ -1,1 +1,25 @@
-<html><body><h1>Agenda Telefônica SEFAZ</h1></body></html>
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Agenda Telefônica SEFAZ</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header><h1>Agenda Telefônica — SEFAZ</h1></header>
+  <nav>
+    <button onclick="showTab('principal')">Agenda Principal</button>
+    <button onclick="showTab('ss')">Secretário e Subsecretários</button>
+  </nav>
+  <section id="principal" class="tab">
+    <h2>Agenda Principal</h2>
+    <table id="tablePrincipal"><thead><tr><th>SIGLA</th><th>SETOR</th><th>TELEFONE</th><th>RAMAL</th><th>RESPONSÁVEL</th><th>LOCAL</th></tr></thead><tbody></tbody></table>
+  </section>
+  <section id="ss" class="tab" style="display:none">
+    <h2>Secretário e Subsecretários</h2>
+    <table id="tableSS"><thead><tr><th>SIGLA</th><th>SETOR</th><th>TELEFONE</th><th>RAMAL</th><th>RESPONSÁVEL</th><th>LOCAL</th></tr></thead><tbody></tbody></table>
+  </section>
+  <script src="assets/app.js"></script>
+</body>
+</html>
